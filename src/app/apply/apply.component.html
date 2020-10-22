@@ -1,0 +1,39 @@
+<div>
+    <mat-card>
+        <h1 class="align-center">Join Us!</h1>
+        <p>
+            If you like our club and would like to be the part of us, feel free to join us!
+        </p>
+        <p>
+            Please fill in and submit the online application form and we will invite you as soon as possible.
+        </p>
+        <form class="apply-form" id="applyform" action="#" method="GET" (submit)="formSubmit($event)">
+            <mat-form-field>
+                <mat-label>First Name</mat-label>
+                <input matInput required>
+            </mat-form-field>
+            <mat-form-field style="width: 230px;">
+                <mat-label>Last Name</mat-label>
+                <input matInput required>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Nickname</mat-label>
+                <input matInput>
+                <mat-hint>We will call you with this name</mat-hint>
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <mat-label>Your Student ID</mat-label>
+                <input matInput required type="number">
+            </mat-form-field>
+            <br>
+            <mat-form-field style="width: 400px;">
+                <mat-label>Contact Email</mat-label>
+                <input matInput type="email">
+                <mat-hint>We will contact you using this email</mat-hint>
+            </mat-form-field>
+            <br>
+            <button mat-raised-button type="submit" form="applyform" color="primary" >Submit</button>
+        </form>
+    </mat-card>
+</div>

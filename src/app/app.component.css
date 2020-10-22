@@ -1,0 +1,22 @@
+.top-bar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+@media screen and (min-width: 768px){
+    .div-spacing {
+        height: 250px;
+    }
+
+    .main-body {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
