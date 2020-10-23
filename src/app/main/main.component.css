@@ -5,12 +5,7 @@
     padding-right: 10px;
 }
 
-@media screen and (min-width: 768px){
-    .main-body {
-        margin-left: 12%;
-        margin-right: 12%;
-    }
-}
+
 
 .align-center {
     text-align: center;
