@@ -1,0 +1,28 @@
+<div class="review bg">
+    <mat-card>
+        <h1>Events Review</h1>
+        <mat-hint>Click to see more</mat-hint>
+    </mat-card>
+    
+    <div class="view-box-container">
+        <ng-container *ngFor="let event of data; index as i">
+            <mat-card class="view-box">
+                <mat-card-header>
+                    <mat-card-title>{{event.name}}</mat-card-title>
+                </mat-card-header>
+                <!-- Insert image of event below -->
+                <img mat-card-image routerLink="/review" [queryParams]="{'id': i}" [src]="event.image[0]" alt="Event photo" (click)="selectViewing(i)" class="link">
+            </mat-card>
+        </ng-container>
+    </div>
+
+    <div *ngIf="!isMain()" class="content-body">
+        <h1>{{data[viewing].name}}</h1>
+        <p>
+            {{data[viewing].desc}}
+        </p>
+        <ng-container *ngFor="let img of data[viewing].image">
+            <img [src]="img">
+        </ng-container>
+    </div>
+</div>

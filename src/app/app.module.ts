@@ -10,6 +10,8 @@ import { ApplyComponent } from './apply/apply.component';
 import { AboutComponent } from './about/about.component';
 import { MembersComponent } from './members/members.component';
 import { ContactComponent } from './contact/contact.component';
+import { RecommendationComponent } from './recommendation/recommendation.component';
+import { ReviewComponent } from './review/review.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ContactComponent } from './contact/contact.component';
     ApplyComponent,
     AboutComponent,
     MembersComponent,
-    ContactComponent
+    ContactComponent,
+    RecommendationComponent,
+    ReviewComponent
   ],
   imports: [
     BrowserModule,

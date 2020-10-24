@@ -1,0 +1,20 @@
+.view-box {
+    width: 200px;
+    min-width: 170px;
+    max-height: 400px;
+    margin: 5px;
+}
+
+.view-box img {
+    object-fit: cover;
+    height: 240px;
+}
+
+.body {
+    margin-bottom: 50px;
+}
+
+.view-container {
+    display: flex;
+    overflow-x: auto;
+}

@@ -1,5 +1,5 @@
-<div class="main-body">
-    <div class="logo-box">
+<div class="main-body bg">
+    <mat-card class="logo-box">
         <img src="/assets/logo.png" class="logo">
         <div>
             <h1 class="title">Welcome to <span class="club-name">Anime Club</span>!</h1>
@@ -7,71 +7,16 @@
                 We are a group of people who love Japan anime culture.
             </p>
         </div>
-        
-    </div>
+    </mat-card>
     <div class="main-content">
         <!-- Event Review -->
-        <div class="review">
-            <h1 class="align-center">Events Review</h1>
-            <div class="view-box-container">
-                <mat-card class="view-box">
-                    <mat-card-header>
-                        <mat-card-title>Anime Appreciation</mat-card-title>
-                    </mat-card-header>
-                    <!-- Insert image of event below -->
-                    <img mat-card-image src="/assets/event-review/AnimeAppreciation.png" alt="Event photo">
-                    <mat-card-content>
-                        <p>
-                            We watch anime together and share our thoughts afterward.
-                        </p>
-                    </mat-card-content>
-                </mat-card>
-
-                <mat-card class="view-box">
-                    <mat-card-header>
-                        <mat-card-title>Anime Exhibtion</mat-card-title>
-                    </mat-card-header>
-                    <!-- Insert image of event below -->
-                    <img mat-card-image src="/assets/event-review/AnimeAppreciation.png" alt="Event photo">
-                    <mat-card-content>
-                        <p>
-                            We will share our collections related to anime and comic to all students regularly.
-                        </p>
-                    </mat-card-content>
-                </mat-card>
-
-                <mat-card class="view-box">
-                    <mat-card-header>
-                        <mat-card-title>Field trip to Japan</mat-card-title>
-                    </mat-card-header>
-                    <!-- Insert image of event below -->
-                    <img mat-card-image src="/assets/event-review/AnimeAppreciation.png" alt="Event photo">
-                    <mat-card-content>
-                        <p>
-                            We travel to Japan with our club members every two years.
-                        </p>
-                    </mat-card-content>
-                </mat-card>
-
-                <mat-card class="view-box">
-                    <mat-card-header>
-                        <mat-card-title>Learn more</mat-card-title>
-                    </mat-card-header>
-                    <!-- Insert image of event below -->
-                    <img mat-card-image src="/assets/event-review/AnimeAppreciation.png" alt="Event photo">
-                    <mat-card-content>
-                        <p>
-                            Click here to see more our events!
-                        </p>
-                    </mat-card-content>
-                </mat-card>
-
-            </div>
-        </div>
+        <app-review></app-review>
 
         <!-- Upcoming Events -->
         <div class="review">
-            <h1 class="align-center">Upcoming Events</h1>
+            <mat-card>
+                <h1>Upcoming Events</h1>
+            </mat-card>
             
             <div class="view-box-container">
                 <mat-card class="view-box">
@@ -127,11 +72,11 @@
 
                 <mat-card class="view-box">
                     <mat-card-header>
-                        <mat-card-title>Learn more</mat-card-title>
+                        <mat-card-title>I am interested!</mat-card-title>
                     </mat-card-header>
                     <mat-card-content>
                         <p>
-                            Click here to see more our events!
+                            Please contact our club members for more information. See <a (click)="scroll(contact)" class="link link-color">Contact</a>
                         </p>
                     </mat-card-content>
                 </mat-card>
@@ -139,11 +84,15 @@
             </div>
         </div>
         
+        <app-recommendation></app-recommendation>
+
         <app-apply></app-apply>
 
         <app-about></app-about>
 
         <app-contact></app-contact>
+        <!-- For scroll-to-end -->
+        <div #contact></div>
     </div>
 </div>
 

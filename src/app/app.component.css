@@ -9,6 +9,13 @@
 @media screen and (min-width: 768px){
     .div-spacing {
         height: 250px;
+        text-align: center;
+    }
+
+    .div-spacing img {
+        margin-top: 20px;
+        height: 80%;
+        display: initial !important;
     }
 
     .main-body {
@@ -19,4 +26,8 @@
 
 .spacer {
     flex: 1 1 auto;
+}
+
+.div-spacing img {
+    display: none;
 }

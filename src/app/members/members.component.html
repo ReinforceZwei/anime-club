@@ -1,63 +1,23 @@
 <div style="margin-top: 50px;" class="bg">
-    <h1 style="text-align: center;">Our club Members</h1>
+    <mat-card>
+        <h1 style="text-align: center;">Our club Members</h1>
+        <mat-hint>Click to see their words</mat-hint>
+    </mat-card>
+    
     <div class="container">
-        <mat-card class="card">
-            <mat-card-header>
-                <mat-card-title>Chan Lok Man</mat-card-title>
-                <mat-card-subtitle>Club Leader</mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image src="/assets/members/placeholder.png">
-            <mat-card-content *ngIf="!isMain()">
-
-            </mat-card-content>
-        </mat-card>
-
-        <mat-card class="card">
-            <mat-card-header>
-                <mat-card-title>Reinforce Zwei</mat-card-title>
-                <mat-card-subtitle>Vice-leader</mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image src="/assets/members/reinforce.png">
-            <mat-card-content *ngIf="!isMain()">
+        <ng-container *ngFor="let member of members">
+            <mat-expansion-panel hideToggle class="card">
+                <mat-expansion-panel-header>
+                    <mat-card-header>
+                        <img mat-card-avatar [src]="member.avatar">
+                        <mat-card-title>{{member.name}}</mat-card-title>
+                        <mat-card-subtitle>{{member.position}}</mat-card-subtitle>
+                    </mat-card-header>
+                </mat-expansion-panel-header>
                 <p>
-                    I like programming and watching anime!
+                    {{member.words}}
                 </p>
-                <p>
-                    My favorite anime is Cardcaptor Sakura.
-                </p>
-            </mat-card-content>
-        </mat-card>
-
-        <mat-card class="card">
-            <mat-card-header>
-                <mat-card-title>Chueng Men Kit</mat-card-title>
-                <mat-card-subtitle>Member</mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image src="/assets/members/placeholder.png">
-            <mat-card-content *ngIf="!isMain()">
-                
-            </mat-card-content>
-        </mat-card>
-
-        <!-- See more (Main page only) -->
-        <mat-card class="card" *ngIf="isMain()">
-            <mat-card-header>
-                <mat-card-title>See more</mat-card-title>
-            </mat-card-header>
-            <a routerLink="/about"><img mat-card-image src="/assets/members/placeholder.png"></a>
-        </mat-card>
-
-        <span *ngIf="!isMain()">
-            <mat-card class="card">
-                <mat-card-header>
-                    <mat-card-title>Yuen Sum Wai</mat-card-title>
-                    <mat-card-subtitle>Member</mat-card-subtitle>
-                </mat-card-header>
-                <img mat-card-image src="/assets/members/placeholder.png">
-                <mat-card-content *ngIf="!isMain()">
-                    
-                </mat-card-content>
-            </mat-card>
-        </span>
+            </mat-expansion-panel>
+        </ng-container>
     </div>
 </div>

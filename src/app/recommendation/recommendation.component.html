@@ -1,0 +1,21 @@
+<div class="body">
+    <mat-card>
+        <h1>Anime Recommendation</h1>
+    </mat-card>
+
+    <div class="view-container">
+        <ng-container *ngFor="let card of data">
+            <mat-card class="view-box">
+                <mat-card-header>
+                    <mat-card-title>{{card.anime}}</mat-card-title>
+                    <mat-card-subtitle>By {{card.by}}</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image [src]="card.cover">
+                <mat-card-action>
+                    <a mat-button [href]="card.wiki" target="_blank">SEE WIKI</a>
+                </mat-card-action>
+            </mat-card>
+        </ng-container>
+    </div>
+    
+</div>

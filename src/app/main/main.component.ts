@@ -12,5 +12,8 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  
+  scroll(el: HTMLElement) {
+    console.log(el);
+    el.scrollIntoView();
+  }
 }

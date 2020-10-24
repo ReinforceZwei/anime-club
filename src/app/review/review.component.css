@@ -1,0 +1,30 @@
+.review {
+    padding-bottom: 30px;
+}
+
+.view-box-container {
+    display: flex;
+    overflow-x: auto;
+}
+
+.view-box {
+    max-width: 250px;
+    min-width: 220px;
+    margin: 5px;
+    height: min-content;
+}
+
+.view-box img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.content-body {
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.content-body img {
+    width: 100%;
+}
