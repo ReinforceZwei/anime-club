@@ -20,7 +20,7 @@ export class MembersComponent implements OnInit {
       },
       {
         name: "Reinforce Zwei",
-        avatar: "/assets/members/reinforce.png",
+        avatar: "assets/members/reinforce.png",
         position: "Vice-leader",
         words: "I like programming and watching anime! My favorite anime is Cardcaptor Sakura."
       },
