@@ -14,7 +14,7 @@ export class MembersComponent implements OnInit {
     this.members = [
       {
         name: "John Chan",
-        avatar: "/assets/members/placeholder.png",
+        avatar: "",
         position: "Club Leader",
         words: ""
       },
@@ -26,22 +26,40 @@ export class MembersComponent implements OnInit {
       },
       {
         name: "Martin Cheung",
-        avatar: "/assets/members/placeholder.png",
+        avatar: "",
         position: "Member",
         words: ""
       },
       {
         name: "Paul Yuen",
-        avatar: "/assets/members/placeholder.png",
+        avatar: "",
         position: "Member",
         words: ""
       },
       {
         name: "Kelvin Lau",
-        avatar: "/assets/members/placeholder.png",
+        avatar: "",
         position: "Member",
         words: ""
-      }
+      },
+      {
+        name: "George Yu",
+        avatar: "",
+        position: "Member",
+        words: ""
+      },
+      {
+        name: "Austin Liu",
+        avatar: "",
+        position: "Member",
+        words: ""
+      },
+      {
+        name: "Richard Ng",
+        avatar: "",
+        position: "Member",
+        words: ""
+      },
     ]
   }
 

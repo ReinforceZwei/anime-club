@@ -44,13 +44,13 @@ export class RecommendationComponent implements OnInit {
       {
         anime: "ONE PIECE",
         cover: "/assets/anime/one_peace.jpg",
-        by: "John Chan",
+        by: "George Yu",
         wiki: "https://zh.wikipedia.org/wiki/ONE_PIECE"
       },
       {
         anime: "Haven't You Heard? I'm Sakamoto",
         cover: "/assets/anime/sakamoto.jpg",
-        by: "Martin Cheung",
+        by: "Austin Liu",
         wiki: "https://zh.wikipedia.org/wiki/%E5%9C%A8%E4%B8%8B%E5%9D%82%E6%9C%AC%EF%BC%8C%E6%9C%89%E4%BD%95%E8%B2%B4%E5%B9%B9%EF%BC%9F"
       },
     ]
