@@ -16,7 +16,7 @@ export class MembersComponent implements OnInit {
         name: "John Chan",
         avatar: "",
         position: "Club Leader",
-        words: ""
+        words: "Welcome to join us!"
       },
       {
         name: "Reinforce Zwei",
@@ -28,37 +28,37 @@ export class MembersComponent implements OnInit {
         name: "Martin Cheung",
         avatar: "",
         position: "Member",
-        words: ""
+        words: "Challenge me by quoting anyone's sentence. I can tell which anime character said this word."
       },
       {
         name: "Paul Yuen",
         avatar: "",
         position: "Member",
-        words: ""
+        words: "Sasuke vs Itachi, the most memorable battle!"
       },
       {
         name: "Kelvin Lau",
         avatar: "",
         position: "Member",
-        words: ""
+        words: "Excalibur!"
       },
       {
         name: "George Yu",
         avatar: "",
         position: "Member",
-        words: ""
+        words: "I will be the Pirate King!"
       },
       {
         name: "Austin Liu",
         avatar: "",
         position: "Member",
-        words: ""
+        words: "I am wondering how people react to Sakamoto."
       },
       {
         name: "Richard Ng",
         avatar: "",
         position: "Member",
-        words: ""
+        words: "No need to feel strange when hear someone says 'Excalibur!' or 'I will be the Pirate King!'"
       },
     ]
   }
