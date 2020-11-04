@@ -14,7 +14,7 @@ export class MembersComponent implements OnInit {
     this.members = [
       {
         name: "John Chan",
-        avatar: "",
+        avatar: "assets/members/John Chan.webp",
         position: "Club Leader",
         words: "Welcome to join us!"
       },
@@ -26,37 +26,37 @@ export class MembersComponent implements OnInit {
       },
       {
         name: "Martin Cheung",
-        avatar: "",
+        avatar: "assets/members/Martin Cheung.jpg",
         position: "Member",
         words: "Challenge me by quoting anyone's sentence. I can tell which anime character said this word."
       },
       {
         name: "Paul Yuen",
-        avatar: "",
+        avatar: "assets/members/Paul Yuen.png",
         position: "Member",
         words: "Sasuke vs Itachi, the most memorable battle!"
       },
       {
         name: "Kelvin Lau",
-        avatar: "",
+        avatar: "assets/members/Kelvin Lau.jpg",
         position: "Member",
         words: "Excalibur!"
       },
       {
         name: "George Yu",
-        avatar: "",
+        avatar: "assets/members/George Yu.png",
         position: "Member",
         words: "I will be the Pirate King!"
       },
       {
         name: "Austin Liu",
-        avatar: "",
+        avatar: "assets/members/Austin Liu.jpeg",
         position: "Member",
         words: "I am wondering how people react to Sakamoto."
       },
       {
         name: "Richard Ng",
-        avatar: "",
+        avatar: "assets/members/Richard Ng.jpeg",
         position: "Member",
         words: "No need to feel strange when hear someone says 'Excalibur!' or 'I will be the Pirate King!'"
       },
