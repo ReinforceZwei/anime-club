@@ -45,6 +45,11 @@
     margin: 5px;
 }
 
+.margin-bottom {
+    margin-bottom: 40px;
+}
+
+
 .box {
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
